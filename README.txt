@@ -37,9 +37,10 @@ RESULTING VM'S (NAME, OS, Network Adapter Name, Network Connection Type)
 PREPARATION
 
 Downloading and Placing Files:
-1. Download this repo and place in "C:\" - this avoids long commands.
-2. End results should show a folder named "WASEnvironment" in the C drive (C:\WASEnvironment\)
-3. Download Windows Server 2022 and Windows 10 ISO's and place them in "C:\WASEnvironment\ISO MASTER"
+1. Create a folder named "Powershell Scripts" in C: drive (C:\Powershell Scripts\)
+2. Download this repo and place in "C:\Powershell Scripts\" - this avoids long commands.
+3. End results should show a folder named "WASEnvironment" in the Powershell scripts folder (C:\Powershell Scripts\WASEnvironment\)
+4. Download Windows Server 2022 and Windows 10 ISO's and place them in "C:\Powershell Scripts\WASEnvironment\ISO MASTER"
 
 
 #####################################################################################################################
@@ -59,11 +60,11 @@ Windows 10 Pro:
 2. Immediately press any key when prompted
 3. After install use password "Pa$$w0rd" for "user1"
 4. Change password in windows if you want a different default password
-5. Copy file from this repo "\WASEnvironment\masterskipoobe.xml" to the VM "C:\" drive.
-5. Open powershell as administrator
-6. Run command "C:\Windows\System32\Sysprep\sysprep.exe /generalize /oobe /shutdown /unattend:C:\masterskipoobe.xml"
-7. Wait until VM fully shuts down. Do not start this VM at this point
-8. Copy VHDX file for the VM and paste here "\WASEnvironment\VHD MASTER\Windows10Pro_Master.vhdx"
+5. Copy xml file from this repo "\WASEnvironment\masterskipoobe.xml" to the VM's "C:\" drive.
+6. Open powershell as administrator
+7. Run command "C:\Windows\System32\Sysprep\sysprep.exe /generalize /oobe /shutdown /unattend:C:\masterskipoobe.xml"
+8. Wait until VM fully shuts down. Do not start this VM at this point
+9. Copy the master VHDX file for the VM and paste here "C:\Powershell Scripts\WASEnvironment\VHD MASTER\Windows10Pro_Master.vhdx"
 Notes:
 	- Windows 10 Master will hold user "user1" and password "Pa$$w0rd" unless changed.
 
@@ -72,11 +73,11 @@ Windows Server 2022:
 1. Start VM
 2. Immediately press any key when prompted
 3. After install use password "Pa$$w0rd" for "Administrator"
-5. Copy file from this repo "\WASEnvironment\masterskipoobe.xml" to the VM "C:\" drive.
+4. Copy xml file from this repo "\WASEnvironment\masterskipoobe.xml" to the VM's "C:\" drive.
 5. Open powershell as administrator
 6. Run command "C:\Windows\System32\Sysprep\sysprep.exe /generalize /oobe /shutdown /unattend:C:\masterskipoobe.xml"
 7. Wait until VM fully shuts down. Do not start this VM at this point
-8. Copy VHDX file for the VM and paste here "\WASEnvironment\VHD MASTER\WindowsServer2022_Master.vhdx"
+8. Copy the master VHDX file for the VM and paste here "C:\Powershell Scripts\WASEnvironment\VHD MASTER\WindowsServer2022_Master.vhdx"
 Notes:
 	- Windows Server 2022 will require you to change password on the new VM when logging in
 	- Both master VM's can be deleted once the VHDX files have been copied to the VHD MASTER folder
