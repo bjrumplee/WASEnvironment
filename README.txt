@@ -1,3 +1,13 @@
+#####################################################################################################################
+
+
+WHAT DOES THIS DO
+- Freaking cheat codes man.
+
+
+#####################################################################################################################
+
+
 WARNING
 - Not meant for use before you understand and are proficient in setting up VM's
 - VM's created are (currently) based off WASI topology and include "TEST-" before each of the VM's actual names to
