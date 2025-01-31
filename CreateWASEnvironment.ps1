@@ -1,9 +1,14 @@
 # Define Variables - VM to Master VHD Mapping
 $VMs = @{
+	"TEST-EDM-RTR"  = @("Windows Server 2022", @("EDM-Network", "Private"), @("HAL-Network", "Private"), @("MEX-Network", "Private"), @("EXT-Network", "Private"))
+    "TEST-EDM-DC1" = @("Windows Server 2022", @("EDM-Network", "Private"))
     "TEST-EDM-SVR1" = @("Windows Server 2022", @("EDM-Network", "Private"))
-    "TEST-EDM-RTR"  = @("Windows Server 2022", @("EDM-Network", "Private"), @("HAL-Network", "Private"), @("MEX-Network", "Private"), @("EXT-Network", "Private"))
-    "TEST-EDM-DC1"  = @("Windows Server 2022", @("EDM-Network", "Private"))
     "TEST-EDM-CL1"  = @("Windows 10 Pro", @("EDM-Network", "Private"))
+    "TEST-HAL-SVR1"  = @("Windows Server 2022", @("HAL-Network", "Private"))
+    "TEST-HAL-CL1"  = @("Windows 10 Pro", @("HAL-Network", "Private"))
+    "TEST-MEX-SVR1"  = @("Windows Server 2022", @("MEX-Network", "Private"))
+    "TEST-MEX-CL1"  = @("Windows 10 Pro", @("MEX-Network", "Private"))
+    "TEST-EXT-CL2"  = @("Windows 10 Pro", @("EXT-Network", "Private"))
 }
 
 $MasterVHDs = @{

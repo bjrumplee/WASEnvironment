@@ -1,3 +1,29 @@
+WARNING
+- Not meant for use before you understand and are proficient in setting up VM's
+- VM's created are (currently) based off WASI topology and include "TEST-" before each of the VM's actual names to
+  avoid accidentally overwriting or corrupting current topology
+- VM's are set to install with 1x processor, 2xGB RAM (not dynamic), and 30GB of space. Make sure you have enough
+  resources, or feel free to adjust (look at the bottom section on how)..
+
+
+#####################################################################################################################
+
+
+RESULTING VM'S (NAME, OS, Network Adapter Name, Network Connection Type)
+- TEST-EDM-RTR, Windows Server 2022, EDM-Network, Private
+- TEST-EDM-DC1, Windows Server 2022, EDM-Network, Private
+- TEST-EDM-SVR1, Windows Server 2022, (EDM-Network, HAL-Network, MEX-Network, EXT-Network), Private
+- TEST-EDM-CL1, Windows 10 Pro, EDM-Network, Private
+- TEST-HAL-SVR1, Windows Server 2022, HAL-Network, Private
+- TEST-HAL-CL1, Windows 10 Pro, HAL-Network, Private
+- TEST-MEX-SVR1, Windows Server 2022, MEX-Network, Private
+- TEST-MEX-CL1, Windows 10 Pro, MEX-Network, Private
+- TEST-EXT-CL2, Windows 10 Pro, EXT-Network, Private
+
+
+#####################################################################################################################
+
+
 PREPARATION
 
 Downloading and Placing Files:
