@@ -1,0 +1,1 @@
+Place VHD created using sysprep and name it "Windows10Pro_Master.vhdx"
