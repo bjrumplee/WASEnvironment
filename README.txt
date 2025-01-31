@@ -39,10 +39,10 @@ PREPARATION
 Downloading and Placing Files:
 1. If you download the files as a RELEASE, it will name the root folder something like "WASEnvironment-WASI". Just 
    rename it to "WASEnvironment" otherwise the scripts WILL NOT WORK.
-1. Create a folder named "Powershell Scripts" in C: drive (C:\Powershell Scripts\)
-2. Download this repo and place in "C:\Powershell Scripts\" - this avoids long commands.
-3. End results should show a folder named "WASEnvironment" in the Powershell scripts folder (C:\Powershell Scripts\WASEnvironment\)
-4. Download Windows Server 2022 and Windows 10 ISO's and place them in "C:\Powershell Scripts\WASEnvironment\ISO MASTER"
+2. Create a folder named "Powershell Scripts" in C: drive (C:\Powershell Scripts\)
+3. Download this repo and place in "C:\Powershell Scripts\" - this avoids long commands.
+4. End results should show a folder named "WASEnvironment" in the Powershell scripts folder (C:\Powershell Scripts\WASEnvironment\)
+5. Download Windows Server 2022 and Windows 10 ISO's and place them in "C:\Powershell Scripts\WASEnvironment\ISO MASTER"
 
 
 #####################################################################################################################
